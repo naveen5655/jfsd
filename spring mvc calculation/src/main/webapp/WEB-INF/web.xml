@@ -1,0 +1,23 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  
+  <display-name>myfirst-mvc-project</display-name>
+
+<servlet>
+    <!-- Provide a Servlet Name -->
+    <servlet-name>frontcontroller</servlet-name>
+    <!-- Provide a fully qualified path to the DispatcherServlet class -->
+    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
+</servlet>
+ 
+<servlet-mapping>
+    <!-- Provide a Servlet Name that you want to map -->
+    <servlet-name>frontcontroller</servlet-name>
+    <!-- Provide a url pattern -->
+    <url-pattern>/</url-pattern>
+</servlet-mapping>
+</web-app>
