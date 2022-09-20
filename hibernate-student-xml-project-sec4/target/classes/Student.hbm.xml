@@ -1,0 +1,22 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name = "com.avk.Student" table = "STUDENT3">
+      
+      <meta attribute = "class-description">
+         This class contains the employee detail. 
+      </meta>
+      
+      <id name = "regdno" type = "int" column = "regd_no">
+         <generator class="increment"/>
+      </id>
+      
+      <property name = "sname" column = "s_name" type = "string"/>
+      <property name = "cgpa" column = "s_cgpa" type = "int"/>
+      
+      
+   </class>
+</hibernate-mapping>
